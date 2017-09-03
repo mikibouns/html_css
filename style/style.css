@@ -1,0 +1,97 @@
+.indentation {
+    margin-left: 15%;
+}
+
+.line {
+    border-right: 2px solid #ccc;
+}
+
+.line img {
+    margin-right: 20px;
+    width: 500px;
+    height: 500px;
+    align: left;
+    border: 2px solid #ffed6b;
+}
+
+.pr {
+    margin-left: 20px;
+}
+
+.pr ul {
+    list-style-image: url(marker.png);
+}
+
+.pr h4{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.short_description {
+    color:  #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.pr h4 + p {
+    color:  #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header a {
+    font-size: 25px;
+    text-decoration: none;
+    text-color: orange;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nonmark {
+    list-style: none;
+}
+
+.contacts input {
+    width: 100%;
+}
+
+.contacts textarea {
+    width: 100%;
+}
+
+input[value="Отправить"], input[value="Очистить"] {
+    width: 140px;
+}
+
+.indentation {
+    width: 600px;
+    height: 400px;
+}
+
+.contacts {
+    display:flex;
+    float:left;
+    margin-left:15px;
+    margin-top: 15px;
+    text-align:left;
+    size: 28px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+h1[align="center"] {
+    background-color: #eaeaea;
+}

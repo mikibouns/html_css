@@ -1,0 +1,58 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p, b {
+    color: red;
+    font-size: 18px;
+}
+
+#first {
+    color: green;
+    text-align: center;
+    background-color: blue;
+}
+
+.block {
+    display: table;
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    border: 4px red;
+    border-style: double;
+}
+/* Пример селекторов атрибутов */
+
+img[alt] {
+    width: 100px;
+}
+
+input[type="text"] {
+    font-size: 10px;
+    width: 150px;
+}
+
+input[type="submit"] {
+    font-size: 10px;
+}
+
+.myclass strong a {
+    font-size: 25px;
+    color: yellow;
+}
+
+.myclass1 a {/* не прямое наследование */
+    font-size: 16px;
+    color: green;
+}
+
+.myclass3>a {/* прямое наследование класса */
+    font-size: 20px;
+    color: grey;
+}
+
+.myclass4 strong + a {/* + означает применять к элементам находящимся рядом */
+    font-size: 5px;
+    color: #ff098e;
+}
