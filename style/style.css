@@ -1,7 +1,3 @@
-.indentation {
-    margin-left: 15%;
-}
-
 .line {
     border-right: 2px solid #ccc;
 }
@@ -68,34 +64,55 @@ header a {
 }
 
 input[value="Отправить"], input[value="Очистить"] {
-    width: 140px;
-}
-
-.indentation {
-    width: 600px;
-    height: 400px;
+    width: 90px;
 }
 
 .contacts {
     display:flex;
-    float:left;
-    margin-left:15px;
-    margin-top: 15px;
-    text-align:left;
-    size: 28px;
+    flex-direction: column;
+    margin: 10px;
+    align-content: center;
+    align-items: stretch;
+}
+
+.contacts form {
+    display: block;
+    width: 30%;
+}
+
+.contacts iframe {
+    display: block;
+    margin: 15px;
+    width: 70%;
+    height: 410px;
+}
+
+.contacts_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .catalog {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaeaea;
+    margin: 0px;
 }
 
-.catalog img {
+.catalog_2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.catalog_2 img {
     border: 2px solid #ffed6b;
 }
 
-h1[align="center"] {
-    background-color: #eaeaea;
-}
