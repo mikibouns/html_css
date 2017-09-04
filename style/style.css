@@ -92,6 +92,10 @@ input[value="Отправить"], input[value="Очистить"] {
     margin: 10px;
 }
 
+.catalog img {
+    border: 2px solid #ffed6b;
+}
+
 h1[align="center"] {
     background-color: #eaeaea;
 }
