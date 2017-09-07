@@ -5,32 +5,58 @@ body {
 }
 
 header a {
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
-    color: orange;
-    text-shadow: 1px 1px 2px black;
+    color: #B9C545;
+    font-weight: bold;
 }
 
-.nonmark {
+header a:hover {
+    color: #CA2229;
+}
+
+header div {
+    display: flex;
+
+}
+
+header div img {
+    width: 80px;
+    height: 130px;
+}
+
+header div ul {
     list-style: none;
 }
 
 /* products */
 
-.line {
-    border-right: 2px solid #ccc;
+.border_prod {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
-.line img {
+.table_prod,  .table_prod td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.border_prod img {
+    float: left;
     margin-right: 20px;
-    width: 500px;
-    height: 500px;
-    align: left;
-    border: 2px solid #ffed6b;
+    width: 30%;
+    border: 2px solid red;
+}
+
+.border_prod img:hover {
+    border: 2px solid #f8f8f8;
 }
 
 .pr {
+    display: block;
     margin-left: 20px;
+    width: 70%
 }
 
 .pr ul {
@@ -50,6 +76,12 @@ header a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.pr p:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: red; /* Красный цвет текста */
 }
 
 .short_description {
@@ -78,6 +110,11 @@ header a {
     margin: 15px;
     width: 70%;
     height: 410px;
+}
+
+.contacts_2 input:focus {
+    background-color: #BDE8EE;
+    color: #314A93;
 }
 
 .contacts_2 {
@@ -115,11 +152,11 @@ header a {
 }
 
 .catalog_2 img {
-    border: 2px solid #ffed6b;
+    border: 2px solid #B9C545;
 }
 
 .catalog_2 div {
-    background-color: #ffed6b;
+    background-color: #B9C545;
     font-size: 18px;
     text-align: center;
 }
