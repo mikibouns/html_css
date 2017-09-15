@@ -1,4 +1,4 @@
-/*header,
+header,
 footer,
 .container,
 .content,
@@ -10,15 +10,11 @@ footer,
 .navbar_windsurf,
 .general_content_block,
 .brand,
- nav {
+ nav
+#product_list,
+.product {
     border: 2px solid black;
 }*/
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 
 /* general block */
 
@@ -41,7 +37,7 @@ header {
 
 header>iframe {
     position: absolute;
-    height: 70%;
+    height: 650px;
 }
 
 .logo {
@@ -70,14 +66,39 @@ header>iframe {
     position: relative;
 }
 
-/* general content */
+/* content */
 
 .content {
     display: flex;
     margin-left: 450px;
     margin-top: -30px;
     margin-right: 10%;
-    height: 570px;
+    min-height: 570px;
+}
+
+/* product list */
+
+#product_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    height: 100%;
+    width: 100%;
+    background-color: #EAEAEA;
+}
+
+.product {
+    background-color: white;
+    margin: 10px;
+}
+
+.product>img {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px 10px 30px 10px;
+    background-color: #EAEAEA;
 }
 
 /* contacts */
@@ -98,7 +119,6 @@ header>iframe {
     padding: -20px;
     font-weight: bold;
     font-family: "Arial";
-
 }
 
 .contacts textarea {
@@ -285,7 +305,7 @@ footer {
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin:  20px auto;
+    margin: auto;
 
 }
 
@@ -346,12 +366,12 @@ footer {
 
 #footer_copyrigth_smm {
     display: block;
-    height: 10px;
-    padding: 1%;
+    height: 100%;
+    padding: 5px;
 }
 
 #footer_copyrigth_smm img {
-    height: 200%;
-    margin: 5px 5px 5px 0px;
+    height: 20px;
+    padding: 5px;
 
 }
