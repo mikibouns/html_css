@@ -1,5 +1,5 @@
 /*#container, footer, header, nav, #content, #navbar, #articles, #welcome_to_surfhouse,
-#header_banner, .product_sections {
+#header_banner, .product_sections, .general_productpage {
     border: 2px solid black;
 }*/
 
@@ -14,11 +14,22 @@ html, body {
     height: 100%;
 }
 
+body {
+    background: #f8f8f8;
+}
+
 #container {
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: -20px;
+    width: 100%;
+    height: 100%;
+}
+
+#container>img {
+    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 /* header */
@@ -111,11 +122,14 @@ header>iframe {
 /* content */
 
 #content {
-    width: 90%;
+    display: flex;
+    justify-content: space-between;
     margin: auto;
-    margin-top: -10px;
+    margin-top: -20px;
     font-weight: bold;
     font-family: "Arial";
+    width: 90%;
+    flex: 1 0 auto;
 }
 
 /* navbar */
@@ -222,16 +236,22 @@ navbar ul {
 /* articles */
 
 #articles {
-    display: flex;
+    display: block;
     flex-direction: column;
     float: right;
     width: calc(100% - 280px);
     height: 100%;
+    clear: both;
 }
 
 .breadcrumbs {
     margin-top: 20px;
+    margin-left: 10px;
     text-align: left;
+}
+
+.breadcrumbs>a[href="#"] {
+    background: yellow;
 }
 
 .breadcrumbs>a {
@@ -279,7 +299,7 @@ navbar ul {
 
 #product_list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-around;
     background: #f8f8f8;
@@ -287,14 +307,18 @@ navbar ul {
 
 #product_list>h2 {
     margin: 30px 40px 0px;
+    font-style: italic;
 }
 
 .product_sections {
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 100%;
     margin: 10px;
+    clear: both;
 }
 
 .product {
@@ -320,6 +344,104 @@ navbar ul {
     margin: 10px;
 }
 
+/* product page */
+
+.general_productpage,
+.productpage_img,
+.productpage_short_description,
+.productpage,
+.productpage_img_color {
+    display: flex;
+}
+
+.general_productpage,
+.productpage_img,
+.productpage_short_description {
+    flex-direction: column;
+}
+
+.general_productpage,
+.productpage,
+.productpage_img,
+.productpage_short_description {
+    height: 100%;
+}
+
+.general_productpage>h4 {
+    display: block;
+    background-color: #26D2FC;
+    margin-left: 5px;
+    margin-top: 50px;
+    padding: 5px;
+    font-size: 15px;
+    width: 185px;
+}
+
+.productpage_img {
+    width: 50%;
+}
+
+.productpage_img>img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background: black;
+}
+
+.productpage_img_color {
+    justify-content: space-around;
+    margin: auto;
+    width: 300px;
+}
+
+.productpage_img_color>img {
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    background: red;
+}
+
+.productpage_short_description {
+    width: 50%;
+    padding: 10px;
+}
+
+.productpage_short_description>h3 {
+    font-style: italic;
+}
+
+.productpage_short_description>a {
+    display: block;
+    background: #FB4D01;
+    color: white;
+    padding: 5px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.productpage_short_description>a:visited {
+    background: #26D2FC;
+}
+
+.productpage_short_description>a:hover {
+    filter: invert(1);
+}
+
+.productpage_product_description, .productpage_short_description>p {
+    color: gray;
+ }
+
+ .productpage_product_description {
+    margin: auto;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.productpage_product_description>ul {
+    list-style-type: none;
+}
+
 /* footer */
 
 footer {
@@ -327,14 +449,16 @@ footer {
     flex-direction: column;
     color: white;
     flex: 0 0 auto;
+    width: 100%;
 }
 
 #footer_general_block {
-    display: flex;
+    display: block;
     flex-direction: column;
     color: white;
     margin:auto;
     background: #373737;
+    width: 100%;
 }
 
 #footer_block_list {
@@ -383,6 +507,18 @@ footer {
 #payment_systems img {
     width: 13%;
     margin: 2px;
+}
+
+.brand {
+    width: 100%;
+    background-image: url(images/brand.png);
+}
+
+.brand>a {
+    display: block;
+    background-image: url(images/brand.png);
+    height: 50px;
+    width: 50px;
 }
 
 /* footer smm content */
